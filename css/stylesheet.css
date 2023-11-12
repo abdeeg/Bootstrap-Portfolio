@@ -20,6 +20,10 @@ padding: 10px;
 background-color: var(--tert-colour);
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    align-items: center;
+}
 
 .navbar-brand img {
 margin-right: 20px;
@@ -50,8 +54,14 @@ background-position: center;
     text-align: center;
   }
 
+Section >H2 {
+    padding: 31px;
+    background-color: var(--tert-colour);
+}
 
-
+.card img {
+background-size: 5px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 678px) {
