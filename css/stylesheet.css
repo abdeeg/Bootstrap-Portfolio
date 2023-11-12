@@ -6,4 +6,58 @@ h1, h2, h3 , h4, h5, h6 {
     font-family: 'Jura', sans-serif;
   }
   
+  :root {
+    --prim-colour: black;
+    --second-colour: white;
+    --tert-colour: grey;
+  }
+
   /* Navigation bar */
+
+.navbar navbar-expand-lg bg-body-tertiary {
+margin-top: -8px;
+padding: 10px;
+background-color: var(--tert-colour);
+}
+
+
+.navbar-brand img {
+margin-right: 20px;
+background-position: center;
+}
+
+.collapse {
+    justify-content: right;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.Hero-banner{
+    height: calc(100vh - 25px);
+    background-image: url(../images/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 678px) {
+
+.navbar-nav {
+    justify-content: left;
+}
+
+}
