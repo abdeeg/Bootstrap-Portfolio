@@ -62,7 +62,9 @@ background-position: center;
   }
 
 /* About Me Section */
-
+#About {
+  justify-content: center;
+}
 
 
 
