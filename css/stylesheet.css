@@ -9,7 +9,11 @@ h1, h2, h3 , h4, h5, h6 {
   :root {
     --prim-colour: black;
     --second-colour: white;
-    --tert-colour: grey;
+    --tert-colour: #3F704D;
+  }
+
+  body {
+    background-color: lightgreen
   }
 
   Section >H2 {
@@ -20,19 +24,23 @@ h1, h2, h3 , h4, h5, h6 {
 
 h3 {
   font-size: 1rem;
+  margin: 10px;
+  font: var(--second-colour);
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 15px 0 15px 0;
 }
 
   /* Navigation bar */
-
-.navbar navbar-expand-lg bg-body-tertiary {
-margin-top: -8px;
-padding: 10px;
-background-color: var(--tert-colour);
-}
-
 .navbar-brand {
     font-size: 1.5rem;
     align-items: center;
+}
+
+nav {
+  font: white;
 }
 
 .navbar-brand img {
@@ -69,10 +77,13 @@ background-position: center;
   justify-content: center;
 }
 
+btn {
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 
-
-
-
+.container-fluid{
+  justify-content: center;
+}
 
 /* Work Section */
 .card-img-top {
@@ -88,7 +99,28 @@ background-position: center;
 /* Work Section */
 
 
+address a {
+  padding: 30px;
+}
 
+.contact address a:hover {
+  color: var(--prim-colour);
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 80px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
 /* Media Queries */
 @media screen and (max-width: 678px) {
